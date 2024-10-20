@@ -11,7 +11,7 @@ html {
 
 body {
     font-family: 'GmarketSansMedium';
-    background-color: rgb(0, 10, 37);
+    background-color: rgb(25, 25, 25);
     text-align: center;
     color: white;
 }
@@ -77,40 +77,49 @@ h3 {
 }
 
 .grid-item {
-    background-color: white;
+    display: flex;
+    flex-direction: column; /* 수직 방향으로 정렬 */
+    justify-content: space-between; /* 아이템 사이의 간격을 자동으로 조정 */
+    height: 100%;
+    background-color: rgb(20, 20, 20);
     margin-top: 30px;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 20px black;
     transition: 0.3s ease;
-    border: 1px solid rgb(0, 255, 115);
+    border: 1px solid rgb(255, 255, 255);
     overflow: hidden;
     font-size: 20px;
 }
 
 .grid-item:hover {
-    border: 2px solid rgb(0, 255, 115);
-    box-shadow:  0 0 8px rgb(0, 255, 115);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow:  0 0 8px rgb(255, 255, 255);
     transform: scale(1.05);
-}
-
-.thumbnail {
-    width: 100%;
-    height: auto; /* 비율 유지 */
 }
 
 .title {
     padding: 10px;
     text-align: center;
     font-size: 16px;
-    color: #333;
+    color: rgb(255, 255, 255);
     font-weight: 500;
+    width: calc(100% - 20px); /* 넓게 만들기 위해 너비 조정 */
+    margin: 0 auto; /* 중앙 정렬 */
 }
 
+.thumbnail {
+    width: 100%;
+    height: auto; /* 비율 유지 */
+    border-radius: 8px; /* 모서리 둥글게 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
+}
+
+
 .play-button {
-    display: inline-block;
-    margin: 20px auto;
+    margin-top: auto; /* 버튼을 아래로 고정 */
+    margin-bottom: 10px;
     padding: 10px 20px;
     background-color: #30ff7f; /* 초록색 배경 */
     color: white;
@@ -124,6 +133,7 @@ h3 {
     text-align: center;
     text-decoration: none; /* 링크처럼 보이지 않게 */
     font-weight: bold;
+    align-self: center; /* 중앙 정렬 */
 }
 
 .play-button:hover {
