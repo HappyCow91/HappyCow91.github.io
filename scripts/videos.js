@@ -9,9 +9,11 @@ playPauseBtn.addEventListener('click', () => {
         video.play();
         playPauseBtn.textContent = '재생 중지';
         playPauseBtn.style.backgroundColor = 'red'
+        playPauseBtn.style.boxShadow = '0 0 10px red'
     } else {
         video.pause();
         playPauseBtn.style.backgroundColor = 'rgb(0, 255, 34)'
+        playPauseBtn.style.boxShadow = '0 0 10px rgb(0, 255, 34)'
         playPauseBtn.textContent = '재생';
     }
 });
