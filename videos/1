@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/videos.css" rel="stylesheet">
+    <title>Chaebum TV - MC범 - 노란펜</title>
+</head>
+<body>
+    <h1>MC범 - 노란펜</h1>
+    <div class="video-container">
+        <video class="youtube-style" id="video" preload="metadata">
+            <source src="/static/archiver/videos/retards.mp4" type="video/mp4">
+            귀하의 브라우저는 비디오 태그를 지원하지 않습니다.
+        </video>
+        <div class="controls">
+            <button id="playPauseBtn">재생</button>
+            <input type="range" id="progressBar" value="0" min="0" max="100">
+            <h2>소리 설정</h2>
+            <input type="range" id="volumeBar" value="100" min="0" max="100"> <!-- 소리 조절 슬라이더 추가 -->
+        </div>
+        <br>
+        <img src="https://qph.cf2.quoracdn.net/main-qimg-67ff8d101eb4a9fe3353d8c24f279ac4-lq" width="300px" height="200px" style="border-radius: 10px; border: 2px solid rgb(0, 110, 255); box-shadow: 0 0 8px rgb(0, 110, 255)">
+        <h3>노래 이해를 못하실 분을 위해, 가사 첨부 *해석 하지못한 가사는 첨부하지 않음*</h3>
+
+        <div class="gasa">
+           <h1>MC범 - 노란펜</h1>
+           <h2>언제까지 먹을것이냐, 왜 공부를 못하니?</h2>
+           <h2>공부할땐 딴짓하지마, 누가 그딴짓 하래</h2>
+           <h2>그대로~ 먹여주니?</h2>
+
+           <a href="https://www.youtube.com/watch?v=kxu1-hBOyHs" target="_blank">MC범이 부른 노래 원곡 링크</a>
+
+        </div>
+    </div>
+    
+    <script src="/scripts/scripts.js"></script>
+</body>
+</html>
