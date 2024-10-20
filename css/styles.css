@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'GmarketSansMedium';
+    background-color: rgb(0, 10, 37);
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    text-shadow: 0 0 7px;
+    font-size: 40px;
+}
+
+h3 {
+    color: red;
+    text-shadow: 0 0 5px;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-input {
+    padding: 10px;
+    border: 2px solid #ffae00;
+    border-radius: 10px;
+    width: 350px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-input:focus {
+    border: 2px solid #ff7b00;
+    box-shadow: 0 0 10px #ff7b00;
+}
+
+.search-button {
+    position: absolute;
+    right: 33%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ff7b00;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #c55f00;
+}
+
+/* video thumbnails */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 자동으로 열 수 조정 */
+}
+
+.grid-item {
+    background-color: white;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+    border: 1px solid rgb(0, 255, 115);
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.grid-item:hover {
+    border: 2px solid rgb(0, 255, 115);
+    box-shadow:  0 0 8px rgb(0, 255, 115);
+    transform: scale(1.05);
+}
+
+.thumbnail {
+    width: 100%;
+    height: auto; /* 비율 유지 */
+}
+
+.title {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+.play-button {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #30ff7f; /* 초록색 배경 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    border: 2px solid #21a152;
+    box-shadow: 0 0 8px #246e40;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none; /* 링크처럼 보이지 않게 */
+    font-weight: bold;
+}
+
+.play-button:hover {
+    background-color: #17dd42; /* 호버 시 어두운 초록색 */
+}
+
+/* 모바일 스타일 */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    .search-input {
+        font-size: 15px;
+        width: 80%; /* 모바일에서 검색바의 너비 조정 */
+    }
+
+    .search-button {
+        right: 5%; /* 버튼 위치 조정 */
+    }
+
+    .title {
+        font-size: 16px; /* 제목 크기 조정 */
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 두 개씩 표시 */
+        gap: 10px; /* 열과 행 사이의 간격 */
+    }
+
+    .grid-item {
+        margin-bottom: 10px; /* 아이템 사이의 간격 조정 */
+    }
+
+    .play-button {
+        max-width: 60%; /* 버튼 너비 조정 */
+        height: 20px;
+    }
+}
