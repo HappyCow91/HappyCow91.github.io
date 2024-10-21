@@ -138,4 +138,8 @@ h2 {
         max-width: 350px;
         max-height: 280px;
     }
+
+    h1 {
+        text-shadow: 0 0 4px;
+    }
 }
