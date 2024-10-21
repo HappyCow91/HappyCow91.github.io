@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'GmarketSansMedium';
+    background-color: rgb(25,25,25);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    text-shadow: 0 0 8px;
+}
+
+/* 선택 시 파란색 테두리 제거 */
+a:focus, img:focus {
+    outline: none;
+}
+
+.left-down {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* 파일 아카이빙 */
+
+.file-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 20px;
+    box-shadow: 0 0 5px;
+}
+
+.file-table th, .file-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+
+.file-table td a {
+    text-decoration: none;
+    color: white;
+}
+
+.file-table th {
+    background-color: rgb(30, 30, 30);
+}
+
+.file-table tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.button-preview {
+    margin-left: 50px;
+    width: 100px;
+    height: 50px;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 8px;
+    float:right;
+}
+
+.button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.button img {
+    margin-top: 5px;
+    width: 35px;
+    height: auto;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* more */
+
+.pic-type {
+    width: 25px;
+    height: 25px;
+    float: left;
+    padding-right: 20px;
+}
+
+@media(max-width:600px) {
+    h1 {
+        font-size: 27px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .file-table {
+        font-size: 15px;
+        width: 120%;
+    }
+
+    .left-down {
+        width: 25px;
+        height: 25px;
+    }
+
+    .pic-type {
+        width: 23px;
+        height: 23px;
+    }
+}
