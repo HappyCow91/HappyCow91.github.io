@@ -85,7 +85,42 @@ h3 {
 
 /* video thumbnails */
 
+/* 네비게이션 바 css */
 
+nav {
+    border-radius: 15px;
+    background-color: #333;
+    padding: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.5s;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+nav a:active {
+    transform: scale(1.05);
+}
+
+nav a:hover {
+    background-color: #555;
+}
 
 .grid-container {
     display: grid;
