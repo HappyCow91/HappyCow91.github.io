@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="onion.css">
+    <title>Retard Storage</title>
+</head>
+<body>
+    <h1 style="text-shadow: 0 0 10px; color: rgb(255, 255, 255);">Retard 저장소는 더이상, 일반 브라우저와 호환되지 않습니다.</h1>
+    <img src="/Tor_Browser-removebg-preview.png" width="200px">
+
+    <h2>이 웹사이트는, 현재 Tor Browser로 호스팅 중 입니다.</h2>
+    <div class="hover"></div>
+    <br>
+    <button class="copy-btn" onclick="copyToClipboard()">URL 복사</button>
+    <br><br><br>
+
+    <hr>
+    <h2 style="text-shadow: 0 0 3px; color: rgb(255, 137, 255);">간편하게 다운로드 하세요.</h2>
+    <div class="download-links">
+        <a href="https://play.google.com/store/apps/details?id=org.torproject.torbrowser&hl=ko" target="_blank">
+            <h3>모바일 다운로드</h3>
+            <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjguOTkgMzEuOTkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZGF0YS1uYW1lPSJDYXBhIDIiPjxnIGRhdGEtbmFtZT0iQ2FwYSAxIj48cGF0aCBkPSJNMTMuNTQgMTUuMjguMTIgMjkuMzRhMy42NiAzLjY2IDAgMCAwIDUuMzMgMi4xNmwxNS4xLTguNloiIHN0eWxlPSJmaWxsOiNlYTQzMzUiLz48cGF0aCBkPSJtMjcuMTEgMTIuODktNi41My0zLjc0LTcuMzUgNi40NSA3LjM4IDcuMjggNi40OC0zLjdhMy41NCAzLjU0IDAgMCAwIDEuNS00Ljc5IDMuNjIgMy42MiAwIDAgMC0xLjUtMS41eiIgc3R5bGU9ImZpbGw6I2ZiYmMwNCIvPjxwYXRoIGQ9Ik0uMTIgMi42NmEzLjU3IDMuNTcgMCAwIDAtLjEyLjkydjI0Ljg0YTMuNTcgMy41NyAwIDAgMCAuMTIuOTJMMTQgMTUuNjRaIiBzdHlsZT0iZmlsbDojNDI4NWY0Ii8+PHBhdGggZD0ibTEzLjY0IDE2IDYuOTQtNi44NUw1LjUuNTFBMy43MyAzLjczIDAgMCAwIDMuNjMgMCAzLjY0IDMuNjQgMCAwIDAgLjEyIDIuNjVaIiBzdHlsZT0iZmlsbDojMzRhODUzIi8+PC9nPjwvZz48L3N2Zz4="
+                width="50px">
+        </a>
+
+        <a href="https://www.torproject.org/dist/torbrowser/14.0.1/tor-browser-windows-x86_64-portable-14.0.1.exe"
+            target="_blank">
+            <h3>Window 다운로드</h3>
+            <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/tor-browser-icon.png"
+                width="50px">
+        </a>
+    </div>
+
+    <!-- 또다른 링크들 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
+
+    <!-- 스크립트 URL 없이 -->
+    <script>
+        function copyToClipboard() {
+            const url = "http://yb2zp5deyc4vnpmih45oljn25q3gvcllb5d32mztkexk6in27hlbtbyd.onion/";
+            navigator.clipboard.writeText(url).then(() => {
+                swal(
+                    '성공',
+                    'URL 복사에 성공 했습니다!',
+                    'success'
+                )
+            }).catch(err => {
+                console.error("링크 복사 실패: ", err);
+            });
+        }
+    </script>
+</body>
+</html>
